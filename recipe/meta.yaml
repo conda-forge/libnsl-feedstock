@@ -16,6 +16,7 @@ build:
     - {{ pin_subpackage('libnsl', max_pin='x.x') }}
 requirements:
   build:
+    - gnuconfig  # [unix]
     - {{ compiler('c') }}
     - make
     - pkg-config
