@@ -10,7 +10,7 @@ source:
   sha256: 2da075ef1893ebdfc5f074f83ac811873dc06fd5c62bc9a4729fd2e27a40341a
 
 build:
-  number: 0
+  number: 1
   skip: true  # [not linux]
   run_exports:
     - {{ pin_subpackage('libnsl', max_pin='x.x') }}
@@ -30,7 +30,7 @@ test:
 
 about:
   home: https://github.com/thkukuk/libnsl
-  license: GPL-2.0-only
+  license: LGPL-2.1-only
   license_family: GPL
   license_file: COPYING
   summary: 'Public client interface library for NIS(YP)'
@@ -38,3 +38,4 @@ extra:
   recipe-maintainers:
     - izahn
     - isuruf
+    - xhochy
