@@ -21,7 +21,6 @@ requirements:
     - make
     - pkg-config
     - libtool
-    - autoconf
 
 test:
   commands:
