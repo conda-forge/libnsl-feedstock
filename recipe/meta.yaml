@@ -17,6 +17,7 @@ build:
 requirements:
   build:
     - gnuconfig  # [unix]
+    - {{ stdlib('c') }}
     - {{ compiler('c') }}
     - make
     - pkg-config
