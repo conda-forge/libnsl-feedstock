@@ -9,10 +9,11 @@ source:
   sha256: 59048b53be8d3904bf939313debf13956a881b0de79da40f7719a77bcd1e9c53
 
 build:
-  number: 0
+  number: 1
   skip: true  # [not linux]
   run_exports:
     - {{ pin_subpackage('libnsl', max_pin='x.x') }}
+
 requirements:
   build:
     - gnuconfig  # [unix]
