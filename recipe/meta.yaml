@@ -1,12 +1,11 @@
-{% set name = "libnsl" %}
 {% set version = "2.0.1" %}
 
 package:
-  name: {{ name|lower }}
+  name: libnsl
   version: {{ version }}
 
 source:
-  url: https://github.com/thkukuk/{{ name }}/archive/v{{ version }}.tar.gz
+  url: https://github.com/thkukuk/libnsl/archive/v{{ version }}.tar.gz
   sha256: 59048b53be8d3904bf939313debf13956a881b0de79da40f7719a77bcd1e9c53
 
 build:
